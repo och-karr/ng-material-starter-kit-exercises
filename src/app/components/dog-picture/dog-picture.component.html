@@ -1,0 +1,6 @@
+<ng-container *ngIf="params$ | async as item">
+  <mat-card style="margin: 20px;">
+    <mat-card-title>Random dog picture</mat-card-title>
+    <img mat-card-image [src]="item.message" alt="dog picture">
+  </mat-card>
+</ng-container>
